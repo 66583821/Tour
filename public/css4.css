@@ -1,0 +1,73 @@
+/* Style de base pour le formulaire */
+/* Style du conteneur d'arrière-plan */
+.background-container {
+    position: relative; /* Permet de positionner les éléments enfants par rapport à ce conteneur */
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    height: 100vh; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden; /* Cachez tout ce qui dépasse du conteneur */
+}
+
+/* Style de l'image de fond */
+.background-container img {
+    position: absolute; /* Position absolue par rapport au conteneur */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Mettez l'image en arrière-plan en utilisant un z-index négatif */
+    object-fit: cover; /* Pour que l'image couvre tout le conteneur */
+}
+
+/* Style de base pour le formulaire */
+.background-container form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond du formulaire légèrement transparent pour que l'image soit visible */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les étiquettes (labels) */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style pour le bouton de soumission */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
